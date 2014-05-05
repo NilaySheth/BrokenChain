@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/menu_logo" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_margin="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/login_bg" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_bg"
+	        android:drawableLeft="@drawable/username_icon"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+        
+         <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/username"
+            android:background="@drawable/input_bg"
+	        android:drawableLeft="@drawable/password_icon"
+	        android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:lines="1"
+            android:singleLine="true" />
+
+          <CheckBox
+             android:id="@+id/rememberme"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Remember Me"
+             android:layout_alignLeft="@+id/password"
+             android:layout_below="@+id/password"
+             android:textColor="#FF6600"
+             android:layout_marginLeft="-5dp"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+         <TextView
+             android:id="@+id/textViewForgotPass"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/password"
+             android:layout_below="@+id/rememberme"
+             android:text="Forgot Password ?"
+             android:textColor="#FF6600"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+
+         <TextView
+             android:id="@+id/textViewCreateaccount"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/textViewForgotPass"
+             android:layout_alignBottom="@+id/textViewForgotPass"
+             android:layout_alignRight="@+id/password"
+             android:text="Create an account ?"
+             android:textColor="#FF6600"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+
+         <Button
+             android:id="@+id/buttonLogin"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/textViewForgotPass"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="20dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_alignParentEnd="true"
+             android:background="@drawable/login_btn"
+              />
+
+        
+         
+    </RelativeLayout>
+
+</RelativeLayout>

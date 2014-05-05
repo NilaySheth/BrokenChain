@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="5dp"
+    android:background="#ffffff"
+    android:layout_toLeftOf="@+id/imgJoin"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <TextView
+        android:id="@+id/txtStatic1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Original Message"
+        android:gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#533419"
+        android:textIsSelectable="false" />
+    
+    <TextView
+        android:id="@+id/txtOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Original Message"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#FF6600"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/txtStatic2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Updated Message"
+        android:gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_marginTop="5dp"
+        android:textColor="#533419"
+        android:textIsSelectable="false" />
+    
+    <TextView
+        android:id="@+id/txtShortMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="Updated Message"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#FF6600"
+        android:textIsSelectable="false" />
+
+</LinearLayout>
